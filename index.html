@@ -1,257 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Welcome page — clear, fast, and responsive landing page to introduce your site or product." />
-  <title>Welcome — Your App</title>
-
-  <style>
-    :root{
-      --bg:#0f1724;
-      --card:#0b1220;
-      --muted:#9aa6b2;
-      --accent1:#7c5cff;
-      --accent2:#00d4ff;
-      --glass: rgba(255,255,255,0.04);
-      --radius:14px;
-      --maxw:1100px;
-      --gap:20px;
-      --mono: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family:var(--mono);
-      background:
-        radial-gradient(1200px 600px at 10% 20%, rgba(124,92,255,0.08), transparent 10%),
-        radial-gradient(900px 400px at 90% 80%, rgba(0,212,255,0.04), transparent 10%),
-        var(--bg);
-      color:#e6eef6;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
-    }
-
-    .container{
-      max-width:var(--maxw);
-      margin:48px auto;
-      padding:48px;
-      display:grid;
-      grid-template-columns: 1fr 420px;
-      gap:var(--gap);
-      align-items:start;
-    }
-
-    .card{
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:var(--radius);
-      padding:28px;
-      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
-      border: 1px solid rgba(255,255,255,0.03);
-    }
-
-    .hero h1{
-      margin:0 0 12px 0;
-      font-size:clamp(28px, 4.6vw, 44px);
-      letter-spacing:-0.02em;
-      line-height:1.02;
-    }
-
-    .lead{
-      color:var(--muted);
-      margin:0 0 22px 0;
-      font-size:1.05rem;
-    }
-
-    .cta-row{
-      display:flex;
-      gap:12px;
-      align-items:center;
-      flex-wrap:wrap;
-      margin-bottom:20px;
-    }
-
-    .btn{
-      display:inline-block;
-      padding:12px 18px;
-      border-radius:12px;
-      font-weight:600;
-      text-decoration:none;
-      cursor:pointer;
-      border:none;
-    }
-    .btn-primary{
-      background:linear-gradient(90deg,var(--accent1),var(--accent2));
-      color:#06121a;
-      box-shadow: 0 6px 20px rgba(92,60,255,0.14);
-    }
-    .btn-ghost{
-      background:transparent;
-      color:var(--accent1);
-      border: 1px solid rgba(124,92,255,0.15);
-    }
-
-    .features{
-      display:grid;
-      grid-template-columns:repeat(2, minmax(0,1fr));
-      gap:14px;
-      margin-top:16px;
-    }
-    .feature{
-      background:var(--glass);
-      padding:12px;
-      border-radius:10px;
-      font-size:0.95rem;
-    }
-    .feature h4{margin:0 0 6px 0;font-size:1rem}
-    .feature p{margin:0;color:var(--muted);font-size:0.92rem}
-
-    .aside{
-      position:relative;
-    }
-    .panel{
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-    }
-    .panel .logo{
-      font-weight:800;
-      letter-spacing:0.02em;
-      font-size:1.1rem;
-      color:var(--accent2);
-    }
-
-    .subscribe{
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      padding:14px;
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,0.03);
-      display:flex;
-      gap:8px;
-      align-items:center;
-    }
-    .subscribe input{
-      background:transparent;
-      border:none;
-      outline:none;
-      color:inherit;
-      flex:1;
-      font-size:0.95rem;
-      padding:8px;
-    }
-
-    .meta{
-      color:var(--muted);
-      font-size:0.9rem;
-      margin-top:6px;
-    }
-
-    footer{
-      max-width:var(--maxw);
-      margin:28px auto;
-      color:var(--muted);
-      font-size:0.9rem;
-      padding:0 48px;
-      display:flex;
-      justify-content:space-between;
-      gap:12px;
-      align-items:center;
-    }
-
-    /* responsive */
-    @media (max-width:980px){
-      .container{grid-template-columns:1fr; padding:28px}
-      footer{padding:0 28px; flex-direction:column; align-items:flex-start}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rush Updates - Daily News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            li {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <main>
-    <div class="container">
-      <section class="card hero" aria-labelledby="welcome-heading">
-        <div class="hero-content">
-          <h1 id="welcome-heading">Welcome to Your App</h1>
-          <p class="lead">Fast, reliable, and built for people who want clean workflows. Get started in seconds — no fluff, just results.</p>
+    <h1>Rush Updates</h1>
+    <ul>
+        <li><a href="content/2025-10-17-Trump_promised_farmers_help._It_s_complicated._-_Politico.html">Trump promised farmers help. It s complicated. - Politico</a></li>
+<li><a href="content/2025-10-17-Trump_confirms_he_s_authorized_CIA_operations_in_Venezuela__looking_into_land_strikes_-_ABC_News_-_Breaking_News__Latest_News_and_Videos.html">Trump confirms he s authorized CIA operations in Venezuela  looking into land strikes - ABC News - Breaking News  Latest News and Videos</a></li>
+<li><a href="content/2025-10-17-Stock_futures_rise_as_earnings_season_heats_up__Live_updates_-_CNBC.html">Stock futures rise as earnings season heats up  Live updates - CNBC</a></li>
+<li><a href="content/2025-10-17-Shutdown_fallout_hits_San_Diego_ahead_of_Vance_s_Marine_Corps_visit_-_Politico.html">Shutdown fallout hits San Diego ahead of Vance s Marine Corps visit - Politico</a></li>
+<li><a href="content/2025-10-17-Pope_Leo_XIV_trolls_Chicago_Cubs_at_Vatican_-_NBC_News.html">Pope Leo XIV trolls Chicago Cubs at Vatican - NBC News</a></li>
+<li><a href="content/2025-10-17-Live_Updates__Hamas_releases_remains_of_two_hostages_-_The_Jerusalem_Post.html">Live Updates  Hamas releases remains of two hostages - The Jerusalem Post</a></li>
+<li><a href="content/2025-10-17-Judge_orders_Trump_administration_to_pause_shutdown_layoffs_-_BBC.html">Judge orders Trump administration to pause shutdown layoffs - BBC</a></li>
+<li><a href="content/2025-10-17-Jennifer_Lopez_Turned_Down_Movie_Role_That_Landed_Another_Actress_an_Oscar_Nom___It_Haunts_Me__-_The_Hollywood_Reporter.html">Jennifer Lopez Turned Down Movie Role That Landed Another Actress an Oscar Nom   It Haunts Me  - The Hollywood Reporter</a></li>
+<li><a href="content/2025-10-17-Doctors_Without_Borders_permanently_closes_its_emergency_center_in_Haiti_s_capital_-_AP_News.html">Doctors Without Borders permanently closes its emergency center in Haiti s capital - AP News</a></li>
+<li><a href="content/2025-10-17-Britney_Spears_Responds_to_Kevin_Federline_Memoir_Allegations___I_Have_Felt_Demoralized__-_The_Hollywood_Reporter.html">Britney Spears Responds to Kevin Federline Memoir Allegations   I Have Felt Demoralized  - The Hollywood Reporter</a></li>
+<li><a href="content/2025-10-17-Breaking__Samsung_has_reportedly_cancelled_the_Galaxy_S26_Edge__here_s_why_-_Android_Authority.html">Breaking  Samsung has reportedly cancelled the Galaxy S26 Edge  here s why - Android Authority</a></li>
+<li><a href="content/2025-10-17-Bessent_says_China__can_t_be_trusted__as_trade_fight_escalates_-_Axios.html">Bessent says China  can t be trusted  as trade fight escalates - Axios</a></li>
+<li><a href="content/2025-10-17-Astronomers_discover_most_powerful__odd_radio_circle__twins_ever_detected_-_CBS_News.html">Astronomers discover most powerful  odd radio circle  twins ever detected - CBS News</a></li>
+<li><a href="content/2025-10-17-2_universities_decline_White_House_offer_for_expanded_access_to_federal_funding_in_exchange_for_demands._Here_s_what_we_know_-_CNN.html">2 universities decline White House offer for expanded access to federal funding in exchange for demands. Here s what we know - CNN</a></li>
+<li><a href="content/2025-07-17-Thousands_of_Afghans_secretly_moved_to_Britain_after_data_leak_-_CNN.html">Thousands of Afghans secretly moved to Britain after data leak - CNN</a></li>
+<li><a href="content/2025-07-17-The_Trump-Epstein_question_that_put_the_White_House__in_a_tizzy__-_Axios.html">The Trump-Epstein question that put the White House  in a tizzy  - Axios</a></li>
+<li><a href="content/2025-07-17-Thai_police_arrest_woman_who_allegedly_seduced_and_blackmailed_Buddhist_monks_-_AP_News.html">Thai police arrest woman who allegedly seduced and blackmailed Buddhist monks - AP News</a></li>
+<li><a href="content/2025-07-17-Stock_Market_Today__Nasdaq_Futures_Slip__More_Earnings__Inflation_Data_Due__Live_Updates_-_The_Wall_Street_Journal.html">Stock Market Today  Nasdaq Futures Slip  More Earnings  Inflation Data Due  Live Updates - The Wall Street Journal</a></li>
+<li><a href="content/2025-07-17-Russia_launches__massive__drone_bombardment_on_Zelensky_s_hometown__Ukrainian_officials_say_-_CNN.html">Russia launches  massive  drone bombardment on Zelensky s hometown  Ukrainian officials say - CNN</a></li>
+<li><a href="content/2025-07-17-Mamdani_expected_to_clarify_his_position_on__globalize_the_intifada__-_Politico.html">Mamdani expected to clarify his position on  globalize the intifada  - Politico</a></li>
+<li><a href="content/2025-07-17-MLB_All-Star_Game_2025__Kyle_Schwarber_leads_NL_to_win_with_3_homers_in_3_swings_in_event_s_first_swing-off_-_Yahoo_Sports.html">MLB All-Star Game 2025  Kyle Schwarber leads NL to win with 3 homers in 3 swings in event s first swing-off - Yahoo Sports</a></li>
+<li><a href="content/2025-07-17-Goldman_Sachs_is_set_to_report_second-quarter_earnings___here_s_what_the_Street_expects_-_CNBC.html">Goldman Sachs is set to report second-quarter earnings   here s what the Street expects - CNBC</a></li>
+<li><a href="content/2025-07-17-Emmy_Noms_Breakdown___The_Studio__Claims_Frontrunner_Status___The_Pitt__and__Adolescence__Gear_Up_for_Drama_and_Limited_Series_Showdowns_-_Variety.html">Emmy Noms Breakdown   The Studio  Claims Frontrunner Status   The Pitt  and  Adolescence  Gear Up for Drama and Limited Series Showdowns - Variety</a></li>
+<li><a href="content/2025-07-17-Adelita_Grijalva_wins_Arizona_Democratic_House_primary__Daniel_Butierez_wins_GOP_nomination_-_CBS_News.html">Adelita Grijalva wins Arizona Democratic House primary  Daniel Butierez wins GOP nomination - CBS News</a></li>
 
-          <div class="cta-row" role="group" aria-label="Primary actions">
-            <a class="btn btn-primary" href="#get-started">Get Started</a>
-            <a class="btn btn-ghost" href="#learn-more">Learn More</a>
-          </div>
-
-          <div class="features" aria-hidden="false">
-            <div class="feature">
-              <h4>Simple Onboarding</h4>
-              <p>Invite teammates, connect tools, and deploy in minutes.</p>
-            </div>
-            <div class="feature">
-              <h4>Secure by default</h4>
-              <p>End-to-end encryption with secure access controls.</p>
-            </div>
-            <div class="feature">
-              <h4>Fast Performance</h4>
-              <p>Optimised for speed across devices and networks.</p>
-            </div>
-            <div class="feature">
-              <h4>Customisable</h4>
-              <p>Flexible settings and integrations to fit your workflow.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <aside class="card aside" aria-labelledby="panel-heading">
-        <div class="panel">
-          <div>
-            <div class="logo">YourApp</div>
-            <div class="meta">Small tagline or company slogan goes here.</div>
-          </div>
-
-          <div style="margin-top:12px">
-            <div style="font-weight:700;margin-bottom:8px">Quick start</div>
-            <ol style="margin:0 0 12px 18px;color:var(--muted)">
-              <li>Sign up or sign in</li>
-              <li>Connect one integration</li>
-              <li>Invite your team</li>
-            </ol>
-            <a class="btn btn-primary" href="#signup" style="width:100%;display:inline-block;text-align:center">Create account</a>
-          </div>
-
-          <div style="margin-top:14px">
-            <div style="font-weight:700;margin-bottom:8px">Stay in the loop</div>
-            <form class="subscribe" onsubmit="event.preventDefault(); alert('Thanks — subscription simulated.');">
-              <input aria-label="Email for newsletter" type="email" placeholder="you@example.com" required />
-              <button class="btn btn-primary" type="submit" style="padding:10px 12px">Subscribe</button>
-            </form>
-            <div class="meta">No spam • Unsubscribe anytime</div>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </main>
-
-  <footer>
-    <div>© <strong>YourApp</strong> <span id="year"></span></div>
-    <div>
-      <a href="#" style="color:inherit;text-decoration:none;margin-right:14px">Terms</a>
-      <a href="#" style="color:inherit;text-decoration:none">Privacy</a>
-    </div>
-  </footer>
-
-  <script>
-    // small JS niceties
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // smooth scroll for demo anchors
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', e=>{
-        const t = document.querySelector(a.getAttribute('href'));
-        if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
-      });
-    });
-  </script>
+    </ul>
 </body>
 </html>
